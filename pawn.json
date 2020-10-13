@@ -1,0 +1,26 @@
+{
+	"user": "WaylandProject",
+	"repo": "YSI_MD5",
+	"entry": "test/test.pwn",
+	"output": "test/test.amx",
+	"dependencies": ["sampctl/pawn-stdlib"],
+	"resources": [
+        {
+            "name": "YSI_MD5-linux-x86.zip",
+            "platform": "linux",
+			"archive": true,
+			"includes": ["pawno/include"],
+            "plugins": ["plugins/md5.so"]
+        },
+        {
+            "name": "YSI_MD5-windows-x86.zip",
+            "platform": "windows",
+			"archive": true,
+			"includes": ["pawno/include"],
+            "plugins": ["plugins/md5.dll"]
+        }
+	],
+	"runtime": {
+        "plugins": ["WaylandProject/YSI_MD5"]
+    }
+}
